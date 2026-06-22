@@ -4,6 +4,12 @@
 
 [![npm version](https://img.shields.io/npm/v/@your-scope/points-mall-base.svg)](https://www.npmjs.com/package/@your-scope/points-mall-base)
 
+## Why This Tech Stack
+
+Rollup is designed for building libraries, not applications. It produces smaller, cleaner output than webpack or Vite for this use case — no runtime overhead, no module federation boilerplate. The dual ESM + CJS output means the package works in Next.js (which consumes ESM) and in any CommonJS tool without a special configuration.
+
+This separation of "application bundle" (Next.js / Vite) and "library bundle" (Rollup) reflects real enterprise practice: a platform team owns the shared component library, product teams consume it. Building this as a separate package — rather than a folder inside the frontend — demonstrates that understanding.
+
 ## What This Package Provides
 
 ### Layout Components
