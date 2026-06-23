@@ -93,6 +93,16 @@ pnpm run publish:npm  # Semantic version bump + npm publish
 | Testing | Vitest + @testing-library/react |
 | Linting | ESLint + Prettier |
 
+## Code Quality
+
+```bash
+pnpm lint          # TypeScript type check (tsc --noEmit)
+pnpm format:check  # Prettier (check only)
+pnpm format        # Prettier (auto-fix)
+```
+
+Formatting runs automatically on staged files via the pre-commit hook. CI runs on every PR via `.github/workflows/ci.yml` in this repository.
+
 ## Package Outputs
 
 ```json

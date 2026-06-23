@@ -5,11 +5,22 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rollup -c rollup.config.mjs",
     "dev": "rollup -c rollup.config.mjs --watch",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js}": ["prettier --write"],
+    "*.{json,md}": ["prettier --write"]
   },
   "peerDependencies": {
     "react": "^19.0.0",
@@ -21,6 +32,8 @@
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "lint-staged": "^17.0.8",
+    "prettier": "^3.8.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup": "^4.9.6",
