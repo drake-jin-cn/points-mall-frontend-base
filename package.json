@@ -1,6 +1,6 @@
 {
-  "name": "@points-mall/frontend-base",
-  "version": "0.1.0",
+  "name": "@drake-jin-cn/frontend-base",
+  "version": "0.1.1",
   "description": "Shared UI component library for Points Mall",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -8,7 +8,12 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drake-jin-cn/points-mall-frontend-base.git"
+  },
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
   },
   "scripts": {
