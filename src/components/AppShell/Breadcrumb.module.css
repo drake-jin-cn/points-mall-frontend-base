@@ -1,0 +1,21 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #595959;
+}
+
+.separator {
+  color: #bfbfbf;
+  user-select: none;
+}
+
+.item {
+  color: #595959;
+}
+
+.current {
+  color: #262626;
+  font-weight: 500;
+}
